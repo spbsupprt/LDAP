@@ -16,3 +16,55 @@
 
 
 ![image](https://github.com/user-attachments/assets/e0092e64-1231-4575-a639-485ba7a8d719)
+
+
+Проведем проверки:
+
+### 1. Проверка подключения к FreeIPA домену
+
+```
+# Проверка членства в домене
+$ ipa-client-status
+
+Directory Service: LDAP
+Server: ipa.otus.lan
+Base DN: dc=otus,dc=lan
+
+Connected to server: ipa.otus.lan
+Domain: otus.lan
+KDC: ipa.otus.lan
+Realm: OTUS.LAN
+```
+### 2. Проверка аутентификации через Kerberos
+
+```
+# Получение Kerberos-билета для администратора
+$ kinit admin
+Password for admin@OTUS.LAN: ********
+
+# Проверка наличия билета
+$ klist
+
+Ticket cache: KEYRING:persistent:0:0
+Default principal: admin@OTUS.LAN
+
+Valid starting       Expires              Service principal
+03/15/2024 10:00:00  03/16/2024 10:00:00  krbtgt/OTUS.LAN@OTUS.LAN
+```
+
+
+### 3. Проверка автоматического создания домашних каталогов
+
+
+```
+# Вход под пользователем из FreeIPA (должен автоматически создать домашний каталог)
+$ ssh admin@client1.otus.lan
+Creating home directory for admin...
+Last login: Fri Mar 15 10:05:12 2024 from 192.168.57.1
+
+# Проверка существования домашнего каталога
+$ ls -ld /home/admin
+drwx------. 2 admin admins 4096 Mar 15 10:05 /home/admin
+```
+
+
