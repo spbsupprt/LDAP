@@ -23,7 +23,7 @@
 
 ### web-интерфейс FreeIPA:
 
-
+![image](https://github.com/user-attachments/assets/88731e3e-75c4-4f1a-b3be-65d7eca149dd)
 
 
 ### 1. Проверка подключения к FreeIPA домену
