@@ -20,6 +20,12 @@
 
 Проведем проверки:
 
+
+### web-интерфейс FreeIPA:
+
+
+
+
 ### 1. Проверка подключения к FreeIPA домену
 
 ```
@@ -66,5 +72,4 @@ Last login: Fri Mar 15 10:05:12 2024 from 192.168.57.1
 $ ls -ld /home/admin
 drwx------. 2 admin admins 4096 Mar 15 10:05 /home/admin
 ```
-
 
