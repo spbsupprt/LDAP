@@ -15,3 +15,4 @@
 Применим плейбук  https://github.com/spbsupprt/LDAP/blob/main/ipa.yml
 
 
+![image](https://github.com/user-attachments/assets/e0092e64-1231-4575-a639-485ba7a8d719)
