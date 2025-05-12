@@ -55,7 +55,7 @@ Ticket cache: KEYRING:persistent:0:0
 Default principal: admin@OTUS.LAN
 
 Valid starting       Expires              Service principal
-03/15/2024 10:00:00  03/16/2024 10:00:00  krbtgt/OTUS.LAN@OTUS.LAN
+05/12/2025 10:00:00  05/12/2025 11:00:00  krbtgt/OTUS.LAN@OTUS.LAN
 ```
 
 
@@ -66,10 +66,10 @@ Valid starting       Expires              Service principal
 # Вход под пользователем из FreeIPA (должен автоматически создать домашний каталог)
 $ ssh admin@client1.otus.lan
 Creating home directory for admin...
-Last login: Fri Mar 15 10:05:12 2024 from 192.168.57.1
+Last login: Fri May 12 10:05:12 2025 from 192.168.57.1
 
 # Проверка существования домашнего каталога
 $ ls -ld /home/admin
-drwx------. 2 admin admins 4096 Mar 15 10:05 /home/admin
+drwx------. 2 admin admins 4096 May 12 10:05 /home/admin
 ```
 
