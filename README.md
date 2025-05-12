@@ -66,7 +66,7 @@ Valid starting       Expires              Service principal
 # Вход под пользователем из FreeIPA (должен автоматически создать домашний каталог)
 $ ssh admin@client1.otus.lan
 Creating home directory for admin...
-Last login: Fri May 12 10:05:12 2025 from 192.168.57.1
+Last login: Mon May 12 10:05:12 2025 from 192.168.57.1
 
 # Проверка существования домашнего каталога
 $ ls -ld /home/admin
